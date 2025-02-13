@@ -351,13 +351,13 @@ textarea#orderNotes {
     padding: 30px 20px;
     background: #f0f0f0;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: 1002;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 600px;
+    overflow: auto;
 }
 
 .order-confirmation h1 {
@@ -368,20 +368,16 @@ textarea#orderNotes {
 .order-confirmation p {
     font-size: 1.2em;
     line-height: 1.5;
-    margin-bottom: 5px;
-}
-
-.order-confirmation p:last-of-type {
-    margin-bottom: 30px; /* Ajustar a margem inferior para aumentar o espaço abaixo da última frase */
+    margin-bottom: 20px;
 }
 
 .order-confirmation .social-icons {
-    margin-top: 30px; /* Ajustar a margem superior para aumentar o espaço acima dos ícones das redes sociais */
+    margin-top: 20px; /* Ajustar a margem superior para aumentar o espaço acima dos ícones das redes sociais */
 }
 
 .order-confirmation .social-icons a {
     display: inline-block;
-    margin: 0 7px; /* Espaçamento entre os ícones das redes sociais */
+    margin: 0 10px; /* Espaçamento entre os ícones das redes sociais */
     text-decoration: none;
     color: #333;
     font-size: 2em; /* Aumentar o tamanho dos ícones das redes sociais no pop-up */
@@ -391,10 +387,11 @@ textarea#orderNotes {
     background: #f9b025;
     color: rgb(80, 17, 17);
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 30px; /* Aumente o valor para baixar mais o botão */
+    margin-top: 20px; /* Aumentar a margem superior para distanciar do texto */
+    font-size: 1.2em; /* Aumentar o tamanho da fonte */
 }
 
 .order-confirmation button:hover {
@@ -406,9 +403,9 @@ textarea#orderNotes {
     color: #555;
     text-align: center;
     position: absolute; /* Definir como absolute */
-    bottom: 10px; /* Ajustar para a parte inferior */
+    bottom: 20px; /* Ajustar para a parte inferior */
     left: 0;
     right: 0;
-    padding: 5px 0; /* Ajustar o padding */
-    margin-top: 20px; /* Adicionar uma margem superior para dar espaçamento */
+    margin: 0; /* Remover margem superior */
+    padding: 5px 0; /* Ajustar padding */
 }
