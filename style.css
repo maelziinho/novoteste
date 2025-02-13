@@ -190,8 +190,8 @@ textarea#orderNotes {
 }
 
 .customer-name button, .order-confirmation button {
-    font-size: 14px; /* Controla o tamanho da fonte do texto do botão */
-    padding: 12px 30px; /* Controla a altura (padding vertical) e largura (padding horizontal) do botão */
+    font-size: 12px; /* Controla o tamanho da fonte do texto do botão */
+    padding: 12px 20px; /* Controla a altura (padding vertical) e largura (padding horizontal) do botão */
     background-color: #f9b025;
     color: rgb(80, 17, 17);
     border: none;
