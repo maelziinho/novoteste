@@ -362,7 +362,7 @@ function finalizeOrder() {
         return;
     }
 
-    // Exibir tela de confirmação com mensagem personalizada e botão "OK"
+    // Exibir tela de confirmação com mensagem personalizada e botão "Enviar Pedido"
     document.getElementById('orderConfirmation').style.display = 'block';
     document.getElementById('orderConfirmation').innerHTML = `
         <h1>Pedido Finalizado!</h1>
@@ -376,10 +376,8 @@ function finalizeOrder() {
                 <i class="fab fa-whatsapp whatsapp-icon"></i>
             </a>
         </div>
-        <button onclick="sendOrderAndReturnToCatalog()">OK</button>
-        <footer class="footer-confirmation">
-            <p>&copy; 2025 Desenvolvido por Ismael Rocha | @_ismaelrocha</p>
-        </footer>
+        <button onclick="sendOrderAndReturnToCatalog()">Enviar Pedido</button>
+        <p class="credit">© 2025 Desenvolvido por Ismael Rocha | @_ismaelrocha</p>
     `;
 }
 
