@@ -13,7 +13,7 @@
     <div class="header" id="header">
         <img src="imagens/logoimperial.png" alt="Imperial Burguer">
         <p class="header-slogan">"Bem-vindo ao império do sabor!"</p>
-        <button class="catalog-button" onclick="showCatalog()">Visualizar Catálogo</button>
+        <button class="catalog-button" onclick="showCatalog()">Visualizar Cardápio</button>
         <div class="informacoes" id="informacoes">
             <p><i class="fas fa-clock clock-icon"></i> Horário de Funcionamento: 18:30 - 22:00</p>
             <p><i class="fas fa-motorcycle motorcycle-icon"></i> Serviço de Delivery Disponível até as 21:30. Faça seu Pedido!</p>
@@ -66,11 +66,11 @@
 
         <div class="payment-option">
             <p>Forma de pagamento:</p>
-            <input type="radio" id="cash" name="paymentOption" value="Dinheiro">
+            <input type="radio" id="cash" name="paymentOption" value="Dinheiro" onchange="checkPaymentOption()">
             <label for="cash">Dinheiro</label>
-            <input type="radio" id="pix" name="paymentOption" value="Pix">
+            <input type="radio" id="pix" name="paymentOption" value="Pix" onchange="checkPaymentOption()">
             <label for="pix">Pix</label>
-            <input type="radio" id="card" name="paymentOption" value="Cartão">
+            <input type="radio" id="card" name="paymentOption" value="Cartão" onchange="checkPaymentOption()">
             <label for="card">Cartão</label>
         </div>
 
@@ -80,7 +80,7 @@
             <button class="confirm-button" onclick="showFinalizeButton()">OK</button>
         </div>
         <div id="finalizeOrderSection" style="display: none;">
-            <button id="finalizeButton" style="margin-top: 10px;" onclick="finalizeOrder()">Finalizar</button> <!-- Ajustar a margem superior -->
+            <button id="finalizeButton" style="margin-top: 10px;" onclick="finalizeOrder()">Finalizar</button>
         </div>
     </div>
 
