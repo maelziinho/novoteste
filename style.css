@@ -370,10 +370,10 @@ textarea#orderNotes {
 }
 
 .order-confirmation p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.5;
     margin-bottom: 20px;
-    max-width: 600px; /* Ajuste para centralizar a mensagem */
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -406,7 +406,7 @@ textarea#orderNotes {
 }
 
 .credit {
-    font-size: 12px; /* Tamanho da fonte */
+    font-size: 10px; /* Tamanho da fonte */
     color: #555;
     text-align: center;
     position: fixed; /* Definir como fixed */
